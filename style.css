@@ -1,0 +1,181 @@
+div#Square {
+    width: 500px;
+    height: 500px;
+    background: darkred;
+    /*box-shadow: 5px 5px 10px brown;*/
+    animation-name: square;
+    animation-duration: .5s;
+    animation-iteration-count:infinite;
+    animation-delay: 0s;
+    animation-direction: alternate-reverse;
+    border-radius: 500px;
+}
+@keyframes square {
+    0%   {width: 0px ; background: white; height:0px}
+    20%  {width: 100px; background: black ; height:100px}
+    40%  {width: 200px; background: white ;height:200px}
+    60%  {width: 300px; background: black; height:300px}
+    80% {width: 400px; background: white ; height:400px}
+    100% {width: 500px; background: black; height:500px}
+}
+
+div#point{
+    /*width: 200px;*/
+    /*height: 40px;*/
+
+    border-radius: 500px;
+    margin-left: 0;
+    margin-top:20%;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+}
+
+div#point i{
+    font-size:100px ;
+    background: white;
+    border-radius: 20px;
+    /*padding-left: 38%;*/
+
+
+}
+
+
+
+div#Circle {
+    width: 100px;
+    height: 100px;
+    background:darkred;
+    /*box-shadow: 5px 5px 10px darkcyan;*/
+    border-radius: 50%;
+    justify-content: center;
+    margin-right: 7em;
+    animation-name: circle;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-direction: alternate-reverse;
+    border-radius: 500px;
+}
+@keyframes circle {
+    0%   {width: 0px ; background: black ; height: 0px}
+    20%  {width: 100px ; background: white; height: 100px}
+    40%  {width: 200px ; background: black ; height: 200px}
+    60%  {width: 300px ; background: white ; height: 300px}
+    80% {width: 400px ; background: black ; height: 400px}
+    100% {width: 500px ; background: white ; height: 500px}
+}
+
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: none;
+}
+
+body {
+    background-color: gold;
+
+
+}
+h3{
+    color: whitesmoke;
+    font-family: "Agency FB";
+    font-size: 5em;
+    padding: 0;
+    margin-top:-750px;
+    margin-left: 32%;
+    animation-name: amigo;
+    animation-duration: 1s;
+    animation-iteration-count: 5;
+    animation-delay: 0s;
+    animation-direction: alternate-reverse;
+    opacity: 0%;
+}
+@keyframes amigo {
+    0%   {font-size: 0em  ; color: darkred ; margin-left: 0% ; opacity: 0% }
+    20%  {font-size: 1em ; color: white; margin-left: 10% ; opacity: 20%  }
+    40%  {font-size: 2em  ; color: darkred ; margin-left: 20% ;opacity: 40% }
+    60%  {font-size: 3em  ; color: white ; margin-left: 25% ; opacity: 60%}
+    80%  {font-size: 4em ; color: darkred ; margin-left: 30% ; opacity: 80% }
+    100% {font-size: 8em  ; color: black ; margin-left: 32% ;opacity: 100% }
+
+}
+
+input[type=number] {
+    padding: 0;
+    margin-top: 0px;
+    width: 20%;
+    margin-left: 10px;
+    border-radius: 10px;
+    height: 30px;
+
+
+}
+form {
+    margin-left: 5%;
+    font-size: 200%;
+    margin-top: 0;
+    /*background-color: whitesmoke;*/
+    /*width: 30%;*/
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+label {
+    font-size: 220%;
+    font-family: "Calibri Light";
+}
+input.event-none {
+    size: 7px;
+    background-color: azure;
+    font-size: 1.5em;
+    margin-left: 10px;
+    font-family: "Agency FB";
+    border-radius: 10px;
+    width: 150px;
+    margin-top: 10px;
+    color: #0ce7e5;
+
+}
+
+h1 {
+
+    font-family: "Agency FB";
+    font-size: 350%;
+    padding: 0;
+    margin-bottom:0;
+    m
+}
+
+h2 {
+    font-family: "Agency FB";
+    font-size: 200%;
+    padding: 0;
+    margin-bottom: auto;
+    margin-top: 20%;
+}
+
+div#Pimg {
+    position: absolute;
+    right: 50%;
+    top: 16%;
+}
+img#personal {
+    width: 350px !important;
+    height: 350px !important;
+    animation-name: Pimg ;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes Pimg {
+    from { transform: rotate(0deg)}
+    to { transform: rotate(360deg)}
+}
